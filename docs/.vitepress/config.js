@@ -20,7 +20,11 @@ export default {
       '/blogs/': [
         {
           text: 'Blogs',
+          collapsible: true,
           items: [
+            { text: 'Linux Setup', link: '/blogs/linux-setup' },
+            { text: 'Random Stuffs', link: '/blogs/linux-random-stuffs' },
+            { text: 'Troubleshooting', link: '/blogs/linux-troubleshooting' },
             { text: 'Nix', link: '/blogs/nix' },
           ]
         }
