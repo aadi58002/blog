@@ -47,5 +47,11 @@ Note that these commands donot work from outside (in non-interactive mode).
 
 ## Running & Chrooting into cross-architecutre binaries
 
+Install `qemu-user-static` and run [this script](https://github.com/Animeshz/scripts/tree/main/main/qemu-binfmt) as superuser:
 
+```bash
+sudo qemu-binfmt --register
+```
+
+*Note: This script needs to be ran again after every reboot, so making it run at startup is recommended.*
 
