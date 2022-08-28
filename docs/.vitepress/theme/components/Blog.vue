@@ -12,7 +12,7 @@ const props = defineProps({
 
 <style scoped>
 .custom-block{
-    padding-top: 8px;
+    padding: 20px;
  }
  .blog{
      text-align: center;

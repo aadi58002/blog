@@ -1,2 +1,2 @@
-# Blogs to write here
+# Index for blogs
 
