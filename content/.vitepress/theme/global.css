@@ -1,15 +1,32 @@
-#VPContent > div > div > div.content{
-    padding-bottom: 40px;
+#VPContent {
+    display: flex;
+    flex-direction: column;
 }
 
-.content-container {
+#VPContent > div.VPDoc {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0 !important;
+}
+
+#VPContent > div > div.container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#VPContent > div > div > div.content {
+    padding-bottom: 50px;
+}
+
+#VPContent > div > div > div.content > div.content-container {
     height: 100% !important;
     display: flex !important;
-    flex-direction: column !important;
     justify-content: start !important;
-
+    flex-direction: column !important;
 }
 
-.main {
-    flex-grow: 1 !important;
+#VPContent > div > div > div.content > div.content-container > main {
+   flex-grow: 1 !important;
 }

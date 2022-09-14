@@ -54,9 +54,6 @@ function sidebarBlog() {
       text: 'Linux',
       collapsible: true,
       items: [
-        { text: 'Linux Setup', link: '/blogs/Linux/linux-setup' },
-        { text: 'Random Stuffs', link: '/blogs/Linux/linux-random-stuffs' },
-        { text: 'Troubleshooting', link: '/blogs/Linux/linux-troubleshooting' },
         { text: 'Nix', link: '/blogs/Linux/nix' },
       ],
     },
