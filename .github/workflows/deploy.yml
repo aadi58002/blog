@@ -19,6 +19,7 @@ jobs:
         node-version: '14'
         cache: 'pnpm'
     - run: pnpm install --frozen-lockfile
+    - run: pnpm build content:build
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.ref == 'refs/heads/main' }}
