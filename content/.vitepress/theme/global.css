@@ -1,0 +1,15 @@
+#VPContent > div > div > div.content{
+    padding-bottom: 40px;
+}
+
+.content-container {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: start !important;
+
+}
+
+.main {
+    flex-grow: 1 !important;
+}

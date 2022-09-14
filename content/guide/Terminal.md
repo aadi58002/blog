@@ -11,9 +11,9 @@ slug: "Terminal"
 
 # Terminal and it parts
 
-<Box>
-    <img src="./Terminal/terminal-parts.png" style="margin: auto;height: 300px;border-radius: 10px"/>
-</Box>
+::: box
+<img src="./Terminal/terminal-parts.png" style="margin: auto;height: 300px;border-radius: 10px"/>
+:::
 
 **Terminal** -> The window that contains everything in the image is the terminal (under the purple border).
 ::: tip Terminal

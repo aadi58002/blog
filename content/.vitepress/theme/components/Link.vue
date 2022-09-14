@@ -1,13 +1,12 @@
 <script setup>
-import videoEb from './videoEb.vue'
 const props = defineProps({
-    blogurl: String,
+    url: String,
     title: String
 })
 </script>
 
 <template>
-    <div class="info custom-block blog"><a :href="blogurl">{{ title  }}</a></div>
+    <div class="info custom-block blog"><a :href="url">{{ title }}</a></div>
 </template>
 
 <style scoped>

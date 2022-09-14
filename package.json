@@ -1,19 +1,27 @@
 {
-  "name": "vitepress-starter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+  "name": "Linux-Blog",
+  "version": "0.1.0",
+  "description": "Site for linux common resouvces as well as some bloging",
+  "author": "Aditya Yadav<aadi58002@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aadi58002/Linux-Blog.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "CC-BY-4.0",
+  "private": false,
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.13",
+    "vue": "^3.2.39"
+  },
+  "scripts": {
+    "content:dev": "vitepress dev content",
+    "content:build": "vitepress build content",
+    "content:serve": "vitepress serve content"
+  },
   "dependencies": {
-    "@vuepress/plugin-last-updated": "^1.9.7",
-    "vitepress": "^1.0.0-alpha.9",
-    "vue": "^3.2.37"
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/vue-fontawesome": "^3.0.1"
   }
 }

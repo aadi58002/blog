@@ -16,16 +16,16 @@ date: "2022-08-04T08:06:17+05:30"
 ## WSL ( Windows sub system for Linux )
 It is by far the easiest to get access to power of linux and it is without any risk.
 Microsoft offical documentation provides a great resource to get started with wsl<br />
-<Blog title="Wsl Install instructions" blogurl="https://docs.microsoft.com/en-us/windows/wsl/install" />
-<videoEb src="https://www.youtube.com/watch?v=wjbbl0TTMeo" />
+<Link title="Wsl Install instructions" url="https://docs.microsoft.com/en-us/windows/wsl/install" />
+<Link title="dummy" url="https://www.youtube.com/watch?v=wjbbl0TTMeo" />
 
 ## Virtual Machine
 It is more featureful implementation of linux. It also has no risk but you might need a more powerful
 computer to run virtual machines.
 Minimul resources to run a virtual machine for your computer should be a 4 or more cores and 8 GB of RAM.
 Recommeneded resources to run a virtual machine for your computer should be a 6 or more cores and 16 GB of RAM.
-<Blog title="Installing ubuntu on virtual Machine" blogurl="https://brb.nci.nih.gov/seqtools/installUbuntu.html" />
-<videoEb src="https://www.youtube.com/watch?v=wX75Z-4MEoM" />
+<Link title="Installing ubuntu on virtual Machine" url="https://brb.nci.nih.gov/seqtools/installUbuntu.html" />
+<Link title="dummy" url="https://www.youtube.com/watch?v=wX75Z-4MEoM" />
 
 
 ## Dual Booting 
@@ -37,8 +37,8 @@ will install two operating system on the same storage device but only one of the
 does not affect the performace of your device.
 [Reasons to Dual boot and Reasons not to as well](https://www.makeuseof.com/tag/reasons-dual-boot-linux/)
 Instructions for dual booting
-<Blog blogurl="https://www.geeksforgeeks.org/creating-a-dual-boot-system-with-linux-and-windows/" title="Dual Boot Guide"/>
-<videoEb src="https://www.youtube.com/watch?v=yIh37HQDF-w" />
+<Link title="Dual Boot Guide" url="https://www.geeksforgeeks.org/creating-a-dual-boot-system-with-linux-and-windows/" />
+<Link title="dummy" url="https://www.youtube.com/watch?v=yIh37HQDF-w" />
 
 :::warning
 Advance stuff ahead
