@@ -1,6 +1,7 @@
-[[toc]]
+---
+title: "Home Page"
+slug: "Home"
+layout: home
+---
 
-# This is a heading
-## a heading
-bksbvksbfvbs
-
+<Home />

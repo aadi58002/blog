@@ -14,9 +14,12 @@
     "vue": "^3.2.39"
   },
   "scripts": {
-    "content:dev": "vitepress dev content",
-    "content:build": "vitepress build content",
-    "content:serve": "vitepress serve content"
+    "dev": "vitepress dev content --port 8000",
+    "build": "vitepress build content --port 8000",
+    "serve": "vitepress serve content --port 8000",
+    "content:dev": "vitepress dev content --port 8000",
+    "content:build": "vitepress build content --port 8000",
+    "content:serve": "vitepress serve content --port 8000"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",

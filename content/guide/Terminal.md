@@ -5,15 +5,15 @@ slug: "Terminal"
 
 <h1>{{ $frontmatter.title }}</h1>
 
-::: info <p style="text-align: center">Lets kill the monster called terminal</p>
+::: info <p style="text-align: center">Terminal is your friend to getting faster</p>
 <span style="color: var(--vp-c-brand)">*Terminal is a different way to do stuff on your computer.*</span>
 :::
 
 # Terminal and it parts
 
-::: box
-<img src="./Terminal/terminal-parts.png" style="margin: auto;height: 300px;border-radius: 10px"/>
-:::
+<Box>
+    <img src="./Terminal/terminal-parts.png" style="margin: auto;height: 300px;border-radius: 10px"/>
+</Box>
 
 **Terminal** -> The window that contains everything in the image is the terminal (under the purple border).
 ::: tip Terminal

@@ -2,6 +2,7 @@
 ### (Blogs | Linux Guide | Contact)
 
 Hello, Thanks for passing by!
+[Website Link](https://aadi58002.github.io/Linux-Blog/)
 This is source repository for my personal website as well as site to gather good resources for topic which interest me.
 
 #### Development/Deployment

@@ -57,8 +57,8 @@ button {
 
 ## Important things to learn in vue
 * <h3>ref</h3>
-[Docs Guide](https://vuejs.org/guide/essentials/reactivity-fundamentals.html#reactive-variables-with-ref)<br />
-[Youtube Guide for Refs](https://www.youtube.com/watch?v=sAj6tdVS2cA)<br />
+[Docs Guide](https://vuejs.org/guide/essentials/reactivity-fundamentals.html#reactive-variables-with-ref)  
+[Youtube Guide for Refs](https://www.youtube.com/watch?v=sAj6tdVS2cA)  
 You have already seen a example of ref in the above code it just basically says that if the value inside the ref changes it will take care of updating it on the actual page.
 ```html
 <script setup>
@@ -77,8 +77,8 @@ When you want to access the value of `{var} in the script tag you will have to u
 If you are wondering why we can change the value of count even though it is a const. It is because ref return a object and const Object can't change but the values inside the object can change.
 :::
 * <h3>@click ( or v-bind:click )</h3>
-[Docs Guide](https://vuejs.org/guide/essentials/event-handling.html)<br />
-[Youtube Guide for Click Events](https://vueschool.io/lessons/vue-fundamentals-capi-user-events-in-vue-3?friend=vuejs)<br />
+[Docs Guide](https://vuejs.org/guide/essentials/event-handling.html)  
+[Youtube Guide for Click Events](https://vueschool.io/lessons/vue-fundamentals-capi-user-events-in-vue-3?friend=vuejs)  
 As you ssw above @click is used to call a Javascript function or inline expression when a button or a element is clicked.
 We can write the first expression as below as well with functions.
 ``` html
@@ -119,19 +119,19 @@ button {
 </style>
 ```
 * <h3>Vue Directives</h3>
-[Docs Guide](https://vuejs.org/guide/essentials/conditional.html)<br />
-[Video Guide](https://youtu.be/FXpIoQ_rT_c?t=742)<br />
+[Docs Guide](https://vuejs.org/guide/essentials/conditional.html)  
+[Video Guide](https://youtu.be/FXpIoQ_rT_c?t=742)  
 
-General Recommendation Here is to watch the Vue Js directives part of the above video to understand how Vue directives are used. Honestly this part is better understood with video rather than blog.<br />
+General Recommendation Here is to watch the Vue Js directives part of the above video to understand how Vue directives are used. Honestly this part is better understood with video rather than blog.  
 
 ### Recommendation Resouces for tags
-[Docs for V-if](https://vuejs.org/guide/essentials/conditional.html)<br />
+[Docs for V-if](https://vuejs.org/guide/essentials/conditional.html)  
 [Video for v-if](https://vueschool.io/lessons/vue-fundamentals-capi-conditionals-in-vue?friend=vuejs)
 
-[Docs for v-for](https://vuejs.org/guide/essentials/list.html)<br />
+[Docs for v-for](https://vuejs.org/guide/essentials/list.html)  
 [Video for v-for](https://vueschool.io/lessons/vue-fundamentals-capi-list-rendering-in-vue?friend=vuejs)
 
-[Docs for v-model](https://vuejs.org/guide/essentials/forms.html)<br />
+[Docs for v-model](https://vuejs.org/guide/essentials/forms.html)  
 [Video for v-model](https://vueschool.io/lessons/vue-fundamentals-capi-user-inputs-in-vue?friend=vuejs)
 
 ## Common Problems
@@ -145,7 +145,7 @@ You can put a ":" before the property which you want to javascript expression in
 Like the ":href" in the case below
 
 
-[Docs Guide](https://vuejs.org/guide/essentials/class-and-style.html)<br />
+[Docs Guide](https://vuejs.org/guide/essentials/class-and-style.html)  
 [Youtube Guide](https://vueschool.io/lessons/vue-fundamentals-capi-dynamic-css-classes-with-vue?friend=vuejs)
 :::
 

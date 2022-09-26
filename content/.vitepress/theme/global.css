@@ -30,3 +30,15 @@
 #VPContent > div > div > div.content > div.content-container > main {
    flex-grow: 1 !important;
 }
+
+#VPContent > div > div.VPHero.VPHomeHero > div > div > p.text {
+    font-size: 30px;
+}
+.VPFeature {
+    background-color: -webkit-linear-gradient(315deg,#42d392,#647eff) !important;
+}
+
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+}
