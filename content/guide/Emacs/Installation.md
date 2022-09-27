@@ -58,7 +58,7 @@ After pasting the above in your `~/.bashrc` or `~/.zshrc` or `~/.config/fish/con
 doomclone && doominstall
 ```
 ## Personal Recommended Config
-Download Recommended Doom Config -> [Here](./Installtion/example.zip)
+Download Recommended Doom Config -> [Here](./Installation/example.zip)
 > The above are good default for doom emacs which are in `my opinion` better to start with.
 
 ::: warning

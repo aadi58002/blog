@@ -4,7 +4,7 @@ slug: index
 ---
 
 ::: warning
-All the Blogs after Getting started assume that you are using the default config provided by this blog. -> [here](Installtion/example.zip)
+All the Blogs after Getting started assume that you are using the default config provided by this blog. -> [here](Installation/example.zip)
 :::
 
 [Introduction To doom Emacs](./Introduction)  
