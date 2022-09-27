@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./app.97ecc69f.js";const _=JSON.parse('{"title":"Vim","description":"","frontmatter":{"title":"Vim","slug":"vim"},"headers":[],"relativePath":"guide/vim.md","lastUpdated":1664253683000}'),i={name:"guide/vim.md"};function r(s,o,c,n,m,d){return t(),a("div")}const l=e(i,[["render",r]]);export{_ as __pageData,l as default};
