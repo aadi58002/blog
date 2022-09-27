@@ -1,5 +1,2 @@
-# Main Linux blogs page
+# Index for blogs
 
-::: warning bsdbs df bsdbvusdv uivbiaabvd ubviabviab
-testing
-:::

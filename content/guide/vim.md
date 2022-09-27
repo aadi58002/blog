@@ -1,5 +1,0 @@
----
-title: Vim
-slug: vim
----
-

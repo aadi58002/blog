@@ -26,16 +26,16 @@ const config: UserConfig = {
       { text: 'Contact', link: '/contact/' }
     ],
     sidebar: {
-      '/blogs/Linux/': mcol(sidebarBlogLinux()),
-      '/blogs/Prog-lang/': mcol(sidebarBlogProglang()),
-      '/blogs/Emacs/': mcol(sidebarBlogEmacs()),
-      '/blogs/Web-dev/': mcol(sidebarBlogWebdev()),
-      '/blogs/': mcol(sidebarBlog()),
+      '/guide/Linux/': mcol(merge(sidebarGuide(),sidebarGuideLinux())),
+      '/guide/Prog-lang/': mcol(merge(sidebarGuide(),sidebarGuideProglang())),
+      '/guide/Emacs/': mcol(merge(sidebarGuide(),sidebarGuideEmacs())),
+      '/guide/Web-dev/': mcol(merge(sidebarGuide(),sidebarGuideWebdev())),
       '/guide/': mcol(sidebarGuide()),
+      '/blogs/': mcol(sidebarBlog()),
       '/contact/': mcol(sidebarContact()),
 
       // Must be at bottom, so other branches are not matched
-      '/': mcol(sidebarMain())
+      // '/': mcol(sidebarMain())
     }
   },
 }
@@ -50,76 +50,81 @@ function mcol(target: any) {
   return target;
 }
 
-function sidebarBlogLinux() {
+function merge(obj1: any, obj2: any){
+  return [...obj1, ...obj2]
+}
+
+function sidebarGuideLinux() {
   return [
     {
       text: 'Linux',
       collapsible: true,
       items: [
-        { text: 'Nix', link: '/blogs/Linux/nix' },
+        { text: 'Installation', link: '/guide/Linux/Installation' },
+        { text: 'Terminal', link: '/guide/Linux/Terminal' },
       ]
     }
   ]
 }
-function sidebarBlogEmacs() {
+function sidebarGuideEmacs() {
   return [
     {
       text: 'Emacs',
       collapsible: true,
       items: [
-        { text: 'Introduction Emacs', link: '/blogs/Emacs/Introduction' },
-        { text: 'Installtion Doom', link: '/blogs/Emacs/Installation' },
+        { text: 'Introduction Emacs', link: '/guide/Emacs/Introduction' },
+        { text: 'Installation Doom', link: '/guide/Emacs/Installation' },
+        { text: 'Getting Started', link: '/guide/Emacs/GettingStarted' },
       ]
     }
   ]
 }
 
-function sidebarBlogWebdev() {
+function sidebarGuideWebdev() {
   return [
     {
       text: 'Web Dev',
       collapsible: true,
       items: [
-        { text: 'Vue', link: '/blogs/Web-dev/Vue' },
+        { text: 'Vue', link: '/guide/Web-dev/Vue' },
       ]
     }
   ]
 }
-function sidebarBlogProglang() {
+function sidebarGuideProglang() {
   return [
     {
       text: 'Prog Lang',
       collapsible: true,
       items: [
-        { text: 'Rust', link: '/blogs/Prog-lang/Rust' },
+        { text: 'Rust', link: '/guide/Prog-lang/Rust' },
       ]
     }
   ]
 }
-
-function sidebarBlog() {
-  return [
-    {
-      text: 'Blogs Topics',
-      items: [
-      { text: 'Linux', link: '/blogs/Linux/'},
-      { text: 'Emacs', link: '/blogs/Emacs/'},
-      { text: 'Web Dev', link: '/blogs/Web-dev/'},
-      { text: 'Prog Lang',link: '/blogs/Prog-lang/'},
-      ]
-    }
-  ]
-}
-
 
 function sidebarGuide() {
+  return [
+    {
+      text: 'Guide Topics',
+      items: [
+      { text: 'Linux', link: '/guide/Linux/'},
+      { text: 'Emacs', link: '/guide/Emacs/'},
+      { text: 'Web Dev', link: '/guide/Web-dev/'},
+      { text: 'Prog Lang',link: '/guide/Prog-lang/'},
+      ]
+    }
+  ]
+}
+
+
+function sidebarBlog() {
   return [
     {
       text: 'Begineers',
       collapsible: true,
       items: [
-        { text: 'Installation', link: '/guide/Installation' },
-        { text: 'Terminal', link: '/guide/Terminal' },
+        { text: 'Vim Tricks', link: '/blogs/Vim' },
       ]
     }
   ]
@@ -136,13 +141,13 @@ function sidebarContact() {
   ]
 }
 
-function sidebarMain() {
-  return [
-    {
-      text: 'Getting started points',
-      items: [
-        { text: 'Nix', link: '/blogs/Linux/nix' },
-      ]
-    }
-  ]
-}
+// function sidebarMain() {
+//   return [
+//     {
+//       text: 'Getting started points',
+//       items: [
+//         { text: 'Nix', link: '/blogs/Linux/nix' },
+//       ]
+//     }
+//   ]
+// }

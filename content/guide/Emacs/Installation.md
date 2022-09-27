@@ -21,10 +21,10 @@ slug: Installtion
   ``` sh
   sudo xbps-install -S emacs ripgrep fd
   ```
-- General required software  
-  install emacs -> https://www.gnu.org/software/emacs/  
-  install ripgrep -> https://github.com/BurntSushi/ripgrep  
-  install fd-find -> https://github.com/sharkdp/fd  
+- Software required to get the most out of doom emacs  
+  Install emacs -> https://www.gnu.org/software/emacs/  
+  Install ripgrep -> https://github.com/BurntSushi/ripgrep  
+  Install fd-find -> https://github.com/sharkdp/fd  
 ## Points to learn Before installing
 Emacs looks for `~/.emacs.d` folder which contains the file to configure it. It by default look for the `init.el` file in that folder.
 ::: tip el file extension
@@ -58,9 +58,10 @@ After pasting the above in your `~/.bashrc` or `~/.zshrc` or `~/.config/fish/con
 doomclone && doominstall
 ```
 ## Personal Recommended Config
-::: danger
+Download Recommended Doom Config -> [Here](./Installtion/example.zip)
+> The above are good default for doom emacs which are in `my opinion` better to start with.
+
+::: warning
 If you already have a `~/.doom.d` either rename to something else or remove the directory
 :::
 
-Download Doom Config -> [Here](./Installtion/example.zip)
-> The above are good default which are in `my opinion` better to start with.

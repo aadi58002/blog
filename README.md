@@ -14,8 +14,8 @@ In order to start the live server or build the website (output goes to `dist`):
 
 ```bash
 ## Live server
-pnpm run content:dev
+pnpm run dev
 
 ## Build
-pnpm run content:build
+pnpm run build
 ```
