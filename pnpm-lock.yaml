@@ -298,8 +298,8 @@ packages:
       '@vue/compiler-dom': 3.2.39
       '@vue/shared': 3.2.39
 
-  /@vue/devtools-api/6.3.0:
-    resolution: {integrity: sha512-OfjtreoF3LtHmte3TrWSoZcyL4XWBL5+dTnCARuJZzTCYuaaO29PGMKCKdmXi4CZ0SiN0Exz1IGSo2S5BgDwEQ==}
+  /@vue/devtools-api/6.4.1:
+    resolution: {integrity: sha512-tY5m7kwu0R+9GWHSncsE40rCX9ou4HhjhlbgdEMci8j08BE7pLlOpHRcyv6eEP0VYrW1JV0zFh6AoWsoHrVyFw==}
     dev: true
 
   /@vue/reactivity-transform/3.2.39:
@@ -746,7 +746,7 @@ packages:
       '@docsearch/css': 3.2.1
       '@docsearch/js': 3.2.1
       '@vitejs/plugin-vue': 3.1.0_vite@3.1.3+vue@3.2.39
-      '@vue/devtools-api': 6.3.0
+      '@vue/devtools-api': 6.4.1
       '@vueuse/core': 9.3.0_vue@3.2.39
       body-scroll-lock: 4.0.0-beta.0
       nprogress: 0.2.0

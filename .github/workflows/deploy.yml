@@ -18,6 +18,7 @@ jobs:
       with:
         node-version: '14'
         cache: 'pnpm'
+    - run: pnpm update
     - run: pnpm install --frozen-lockfile
     - run: pnpm run content:build
     - name: Deploy

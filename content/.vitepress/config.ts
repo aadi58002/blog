@@ -68,6 +68,7 @@ function sidebarBlogEmacs() {
       collapsible: true,
       items: [
         { text: 'Introduction Emacs', link: '/blogs/Emacs/Introduction' },
+        { text: 'Installtion Doom', link: '/blogs/Emacs/Installation' },
       ]
     }
   ]

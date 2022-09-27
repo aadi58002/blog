@@ -11,7 +11,7 @@ import button_count from './Vue/Button-count.vue'
 
 ::: danger Vue Docs by default show the Docs for Vue 2
 Make sure that the toggle near the Vue logo is toggled to the Composition side to see the docs for Vue 3.
-<img src="./Vue/Vue-docs-warning.png" alt="Vue docs Warning" />
+![Vue Docs Warning](./Vue/Vue-docs-warning.png)
 :::
 
 ## What is Vue
