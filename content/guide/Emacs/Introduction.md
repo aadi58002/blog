@@ -25,7 +25,11 @@ If you don't like tinkering with things or want a `just work out of the box` edi
 
 ## What can Emacs do
 Basically there is no limitation on what emacs can do (if you can think and write it in code emacs will do if for you).
-- [Taste of Emacs power](https://www.redhat.com/sysadmin/5-emacs-features-to-love)
+- You can edit files on remote server with your editor.
+- A editor does not have to installed on the remote server for emacs to work.
+- You can have a personal database ( with sql ) with [Org Roam](https://www.orgroam.com/).
+- Emacs also has the most powerful textual user interface (TUI) for git called [Magit](https://magit.vc/).
+- the list does not stop so i can't list them all here [Taste of Emacs power](https://www.redhat.com/sysadmin/5-emacs-features-to-love) Here is a teaser.
 
 ## Why is Emacs not popular
 It is because out the box emacs is very unusable.
@@ -35,7 +39,7 @@ It is because out the box emacs is very unusable.
 - To even start using it you have to learn too many things ( ex -> elisp , keybinding , terms commonly used in emacs etc )
 
 ## Solution to Emacs problem
-- [Doom Emacs](https://github.com/doomemacs/doomemacs) is a have good defaults configuration framework for emacs.
+- [Doom Emacs](https://github.com/doomemacs/doomemacs) is a have good defaults configuration framework for emacs.  
   It also gives you the most powerful interface with emacs while it does not gets in the way when you try to customize it.
 - [Spacemacs](https://www.spacemacs.org/) is a do it all solution . It has everything and it does everything.  
 > Personal Opinion -> It does too much and is too slow for me

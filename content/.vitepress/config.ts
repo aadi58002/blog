@@ -75,6 +75,7 @@ function sidebarGuideEmacs() {
         { text: 'Introduction Emacs', link: '/guide/Emacs/Introduction' },
         { text: 'Installation Doom', link: '/guide/Emacs/Installation' },
         { text: 'Getting Started', link: '/guide/Emacs/GettingStarted' },
+        { text: 'Resources', link: '/guide/Emacs/Resources' },
       ]
     }
   ]

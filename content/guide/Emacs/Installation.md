@@ -43,20 +43,22 @@ git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
 ```
 ## Personal Way
 ``` sh
-export PATH="$PATH:~/.emacs.d/bin"
+export PATH="$PATH:~/.emacs.d/bin"                   # Add the doom command so that you can access it without full path
 
-alias ke="killall -w emacs"
-alias e="emacsclient -c -a 'emacs' -q . & disown"
-alias ess="emacsclient -a '' -e '(server-start)'"
-alias doominstall="doom install"
-alias doomclone="git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d"
-alias esr="killall -w emacs &&  doom sync && emacsclient -a '' -e '(server-start)'"
+alias doomclone="git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d" # i Didn't want to remember the url each time
+
+alias ke="killall -w emacs"                          # Kill emacs server and wait to emacs process to finish
+alias fke="killall emacs"                            # Force kill emacs
+alias e="emacsclient -c -a 'emacs' -q . & disown"    # e = emacs
+alias ess="emacsclient -a '' -e '(server-start)'"    # ess = emacs server start
+alias esr="killall -w emacs &&  doom sync && emacsclient -a '' -e '(server-start)'" # esr = emacs server restart
 ```
 
-After pasting the above in your `~/.bashrc` or `~/.zshrc` or `~/.config/fish/config.fish`
+After pasting the above in your `~/.bashrc` or `~/.zshrc` or `~/.config/fish/config.fish`. Open a new terminal and then write the below commands
 ``` sh
-doomclone && doominstall
+doomclone && doom install
 ```
+> Answer yes to all questions ( it is mostly to install required fonts for doom emacs )
 ## Personal Recommended Config
 Download Recommended Doom Config -> [Here](./Installation/example.zip)
 > The above are good default for doom emacs which are in `my opinion` better to start with.
