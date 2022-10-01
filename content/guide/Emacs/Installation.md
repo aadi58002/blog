@@ -60,7 +60,7 @@ doomclone && doom install
 ```
 > Answer yes to all questions ( it is mostly to install required fonts for doom emacs )
 ## Personal Recommended Config
-Download Recommended Doom Config -> [Here](./Installation/example.zip)
+Download Recommended Doom Config -> <a href="/example.zip" download>here</a>
 > The above are good default for doom emacs which are in `my opinion` better to start with.
 
 ::: warning

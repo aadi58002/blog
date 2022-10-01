@@ -26,10 +26,10 @@ const config: UserConfig = {
       { text: 'Contact', link: '/contact/' }
     ],
     sidebar: {
-      '/guide/Linux/': mcol(merge(sidebarGuide(),sidebarGuideLinux())),
-      '/guide/Prog-lang/': mcol(merge(sidebarGuide(),sidebarGuideProglang())),
-      '/guide/Emacs/': mcol(merge(sidebarGuide(),sidebarGuideEmacs())),
-      '/guide/Web-dev/': mcol(merge(sidebarGuide(),sidebarGuideWebdev())),
+      '/guide/Linux/': mcol(merge(sidebarGuideLinux(),sidebarGuide())),
+      '/guide/Prog-lang/': mcol(merge(sidebarGuideProglang(),sidebarGuideLinux())),
+      '/guide/Emacs/': mcol(merge(sidebarGuideEmacs(),sidebarGuideLinux())),
+      '/guide/Web-dev/': mcol(merge(sidebarGuideWebdev(),sidebarGuideLinux())),
       '/guide/': mcol(sidebarGuide()),
       '/blogs/': mcol(sidebarBlog()),
       '/contact/': mcol(sidebarContact()),

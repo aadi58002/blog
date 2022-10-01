@@ -5,7 +5,7 @@ slug: Getting_Started
 
 # {{ $frontmatter.title }}
 ::: warning
-All the Blogs after Getting started assume that you are using the default config provided by this blog. -> [here](Installation/example.zip)
+All the Blogs after Getting started assume that you are using the default config provided by this blog. -> <a href="/example.zip" download>here</a>
 :::
 
 ## How to start Emacs
