@@ -1,5 +1,7 @@
-# Main Linux blogs page
+---
+title: "Blogs"
+layout: home
+---
 
-::: warning bsdbs df bsdbvusdv uivbiaabvd ubviabviab
-testing
-:::
+<BlogIndex />
+

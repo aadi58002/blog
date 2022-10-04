@@ -1,7 +1,5 @@
 ---
 title: "Installtion of Linux"
-slug: "Installation"
-date: "2022-08-04T08:06:17+05:30"
 ---
 
 <h1>{{ $frontmatter.title }}</h1>

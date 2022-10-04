@@ -1,6 +1,5 @@
 ---
 title: Vue
-slug: Vue
 ---
 
 <script setup>

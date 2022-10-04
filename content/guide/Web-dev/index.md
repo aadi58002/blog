@@ -1,4 +1,3 @@
 ---
 title: Index
-slug: index
 ---

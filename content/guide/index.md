@@ -1,2 +1,7 @@
-# Index for blogs
+---
+title: "Guides"
+layout: home
+---
+
+<GuideIndex />
 

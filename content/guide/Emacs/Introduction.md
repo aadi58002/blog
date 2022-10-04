@@ -1,6 +1,5 @@
 ---
 title: Emacs Introduction ( Doom emacs )
-slug: Introduction
 ---
 
 # {{ $frontmatter.title }}

@@ -1,6 +1,5 @@
 ---
 title: Vim
-slug: vim
 ---
 
 # {{ $frontmatter.title }}
@@ -9,6 +8,7 @@ There are many ways to get familiar with vim
 1. If you have vim installed (not neovim) then there is a command called `vimtutor` which you can use to learn vim.
    For begineers i would recommend that you complete it till 2nd chapter.
 2. [Evil Tutor](/guide/Emacs/GettingStarted.md) ( Vim tutor for emacs users )
+
 ## Case Changes in vim
 ```sh
  ~    : Changes the case of current character

@@ -1,6 +1,5 @@
 ---
 title: Resources
-slug: Resources
 ---
 
 # {{ $frontmatter.title }}

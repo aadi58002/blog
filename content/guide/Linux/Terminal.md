@@ -1,6 +1,5 @@
 ---
 title: "Terminal for Children"
-slug: "Terminal"
 ---
 
 <h1>{{ $frontmatter.title }}</h1>

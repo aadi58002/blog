@@ -5,21 +5,20 @@ import './global.css'
 
 // Custom Components import start
 import Link from './components/Link.vue'
-import Home from './components/Home.vue'
+import GuideIndex from './components/GuideIndex.vue'
+import BlogIndex from './components/BlogIndex.vue'
 
 // Animesh Sahu Componenets
 import Box from './components/Box.vue'
 // Custom Components import end
 
-/**
- * @type {import('vitepress').Theme}
- */
 const config: Object = {
   ...DefaultTheme,
   enhanceApp({ app }) {
     app.component('Box', Box)
     app.component('Link', Link)
-    app.component('Home', Home);
+    app.component('BlogIndex', BlogIndex)
+    app.component('GuideIndex', GuideIndex);
   }
 }
 
