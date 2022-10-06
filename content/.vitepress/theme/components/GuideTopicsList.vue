@@ -20,7 +20,7 @@ if(props.color == "blue"){
 <template>
     <div :class="boxColor + ' custom-block homeListBlock'">
         <img :src="image" alt="unable to load image" :style="'width: ' + imageWidth"/>
-        <div v-for="link in list[0].items">
+        <div v-for="link in list.items">
             <a :href="link.link">{{ link.text }}</a>
         </div>
     </div>

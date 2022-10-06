@@ -1,5 +1,6 @@
 import type { UserConfig } from 'vitepress'
-import * as paths from './paths'
+import { mcol, merge,sidebarGuide,sidebarGuideEmacs,sidebarGuideLinux,sidebarGuideProglang,sidebarGuideWebdev } from './paths'
+import sidebarBlog from './blogs'
 
 const config: UserConfig = {
   base: '/Linux-Blog/',
@@ -27,28 +28,16 @@ const config: UserConfig = {
       { text: 'Contact', link: '/contact/' }
     ],
     sidebar: {
-      '/guide/Linux/': mcol(merge(paths.sidebarGuideLinux(),paths.sidebarGuide())),
-      '/guide/Prog-lang/': mcol(merge(paths.sidebarGuideProglang(),paths.sidebarGuide())),
-      '/guide/Emacs/': mcol(merge(paths.sidebarGuideEmacs(),paths.sidebarGuide())),
-      '/guide/Web-dev/': mcol(merge(paths.sidebarGuideWebdev(),paths.sidebarGuide())),
+      '/guide/Linux/': mcol(merge(sidebarGuideLinux(),sidebarGuide())),
+      '/guide/Prog-lang/': mcol(merge(sidebarGuideProglang(),sidebarGuide())),
+      '/guide/Emacs/': mcol(merge(sidebarGuideEmacs(),sidebarGuide())),
+      '/guide/Web-dev/': mcol(merge(sidebarGuideWebdev(),sidebarGuide())),
+      '/blogs/': mcol(sidebarBlog()),
 
       // Must be at bottom, so other branches are not matched
-      // '/': mcol(sidebarMain())
+      // '/': paths.mcol(sidebarMain())
     }
   },
 }
 
 export default config;
-
-
-function mcol(target: any) {
-  if (target.length > 1) {
-    target.forEach(v => v.collapsible = true);
-  }
-  return target;
-}
-
-function merge(obj1: any, obj2: any){
-  return [...obj1, ...obj2]
-}
-

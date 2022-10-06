@@ -1,17 +1,89 @@
 <script setup>
-import * as paths from '../../paths'
+import { reactive, computed } from 'vue'
+import sidebarBlog from '../../blogs'
+import BlogItem from './BlogItem.vue'
+
+const data = sidebarBlog()[0]
+const tagList = data.Uniqtags
+const SearchTerms = reactive({"searchTags": []})
+let FilteredResult = data.items
+const displayList = computed(() => {
+      return data.items.filter((item) =>{
+          return SearchTerms.searchTags.every(e => item.tags.includes(e))
+      })
+})
+
+function SearchTermAdd(tag){
+   const index = SearchTerms.searchTags.indexOf(tag)
+   if(index >= 0){
+       SearchTerms.searchTags.splice(index,1)
+   }else{
+       SearchTerms.searchTags.push(tag)
+   }
+}
+
 </script>
 
 <template>
-    <div>
-        test
+    <div class="container">
+        <div class="searchTermBar">
+            <p class="SearchTitle">Search Terms : </p>
+            <span v-for="tag in SearchTerms.searchTags">
+                <p class="Searchtag">{{ tag }}</p>
+            </span>
+        </div>
+        <div class="tagListBar" v-for="tag in tagList">
+            <button :class="{'tagButton ': true,'selected': SearchTerms.searchTags.indexOf(tag) >= 0}" @click="SearchTermAdd(tag)">{{ tag }}</button>
+        </div>
+        <div v-for="item in displayList">
+            <BlogItem :data="item" />
+        </div>
     </div>
 </template>
 
 <style scoped>
-.container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
- }
+.container{
+    margin-top: 10px;
+    padding: 0px 2%;
+}
+
+.searchTermBar{
+   background-color: var(--vp-c-bg-mute);
+   display: flex;
+   flex-wrap: wrap;
+   border-radius: 5px;
+   min-height: 30px;
+}
+
+.SearchTitle{
+    margin: 5px;
+}
+
+.Searchtag{
+    margin: 5px;
+    padding: 0px 5px;
+    background-color: var(--vp-c-brand);
+    border-radius: 5px;
+}
+
+.tagListBar{
+   display: inline-flex;
+   flex-wrap: wrap;
+   margin: 20px 0px;
+}
+
+.tagButton {
+    border-color: var(--vp-button-alt-border);
+    color: var(--vp-button-alt-text) !important;
+    background-color: var(--vp-button-alt-bg);
+    border-radius: 20px;
+    padding: 0 12px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.selected {
+   background-color: var(--vp-c-brand);
+   color: var(--vp-code-block-bg);
+}
 </style>

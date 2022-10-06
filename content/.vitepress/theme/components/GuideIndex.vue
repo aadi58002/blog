@@ -1,14 +1,14 @@
 <script setup>
 import GuideTopicsList from './GuideTopicsList.vue'
-import * as paths from '../../paths'
+import { sidebarGuideLinux, sidebarGuideWebdev, sidebarGuideEmacs ,sidebarGuideProglang} from '../../paths'
 </script>
 
 <template>
     <div class="container">
-        <GuideTopicsList :list="paths.sidebarGuideLinux()" color="red" image="/arch-logo.webp" imageWidth="40%"/>
-        <GuideTopicsList :list="paths.sidebarGuideWebdev()" color="green"  image="/web-dev.webp" imageWidth="30%"/>
-        <GuideTopicsList :list="paths.sidebarGuideEmacs()" color="blue" image="/doom-emacs.webp" imageWidth="30%"/>
-        <GuideTopicsList :list="paths.sidebarGuideProglang()" color="yellow" image="/programming-lang.webp" imageWidth="90%"/>
+        <GuideTopicsList :list="sidebarGuideLinux()[0]" color="red" image="/arch-logo.webp" imageWidth="40%"/>
+        <GuideTopicsList :list="sidebarGuideWebdev()[0]" color="green"  image="/web-dev.webp" imageWidth="30%"/>
+        <GuideTopicsList :list="sidebarGuideEmacs()[0]" color="blue" image="/doom-emacs.webp" imageWidth="30%"/>
+        <GuideTopicsList :list="sidebarGuideProglang()[0]" color="yellow" image="/programming-lang.webp" imageWidth="90%"/>
     </div>
 </template>
 

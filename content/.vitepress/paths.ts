@@ -53,11 +53,22 @@ export function sidebarGuide() {
     {
       text: 'Guide Topics',
       items: [
-      { text: 'Linux', link: '/guide/Linux/'},
-      { text: 'Emacs', link: '/guide/Emacs/'},
-      { text: 'Web Dev', link: '/guide/Web-dev/'},
-      { text: 'Prog Lang',link: '/guide/Prog-lang/'},
+        { text: 'Linux', link: '/guide/Linux/' },
+        { text: 'Emacs', link: '/guide/Emacs/' },
+        { text: 'Web Dev', link: '/guide/Web-dev/' },
+        { text: 'Prog Lang', link: '/guide/Prog-lang/' },
       ]
     }
   ]
+}
+
+export function mcol(target: any) {
+  if (target.length > 1) {
+    target.forEach(v => v.collapsible = true);
+  }
+  return target;
+}
+
+export function merge(obj1: any, obj2: any) {
+  return [...obj1, ...obj2]
 }

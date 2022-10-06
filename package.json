@@ -20,11 +20,5 @@
     "content:dev": "vitepress dev content --port 8000",
     "content:build": "vitepress build content --port 8000",
     "content:serve": "vitepress serve content --port 8000"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-brands-svg-icons": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
-    "@fortawesome/vue-fontawesome": "^3.0.1"
   }
 }
