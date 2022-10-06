@@ -69,7 +69,7 @@ for file in blogFiles:
     frontmatter = localFileParsing(open(file, "r"))
     item = item + parsingFrontMatter(frontmatter,UniqTags)
     blogFileModified = DateModified(file)
-    item = item + "        lastUpdated: \"" + blogFileModified + "\"\n      }"
+    item = item + "        lastUpdated: '" + blogFileModified + "'\n      }"
     listItems.append(item)
 
-writingtsBlockToFile(dirname + "content/.vitepress/blogs.ts",UniqTags,listItems)
+writingtsBlockToFile(dirname + "/content/.vitepress/blogs.ts",UniqTags,listItems)

@@ -32,8 +32,8 @@ function SearchTermAdd(tag){
                 <p class="Searchtag">{{ tag }}</p>
             </span>
         </div>
-        <div class="tagListBar" v-for="tag in tagList">
-            <button :class="{'tagButton ': true,'selected': SearchTerms.searchTags.indexOf(tag) >= 0}" @click="SearchTermAdd(tag)">{{ tag }}</button>
+        <div class="tagListBar">
+            <button :class="{'tagButton ': true,'selected': SearchTerms.searchTags.indexOf(tag) >= 0}" v-for="tag in tagList" @click="SearchTermAdd(tag)">{{ tag }}</button>
         </div>
         <div v-for="item in displayList">
             <BlogItem :data="item" />
@@ -76,6 +76,7 @@ function SearchTermAdd(tag){
     border-color: var(--vp-button-alt-border);
     color: var(--vp-button-alt-text) !important;
     background-color: var(--vp-button-alt-bg);
+    margin: 0px 5px;
     border-radius: 20px;
     padding: 0 12px;
     line-height: 30px;
