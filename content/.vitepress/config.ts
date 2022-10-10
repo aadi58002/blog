@@ -3,7 +3,7 @@ import { mcol, merge,sidebarGuide,sidebarGuideEmacs,sidebarGuideLinux,sidebarGui
 import sidebarBlog from './blogs'
 
 const config: UserConfig = {
-  base: '/',
+  base: '/Linux-Blog',
   lang: 'en-US',
   title: 'Aditya Yadav',
   description: 'Interting topics as well a place to get good links to resources for topics of my interest',
