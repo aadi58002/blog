@@ -20,7 +20,7 @@ jobs:
         cache: 'pnpm'
     - run: pnpm update
     - run: pnpm install
-    - run: pnpm run content:build
+    - run: pnpm build
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.ref == 'refs/heads/main' }}
