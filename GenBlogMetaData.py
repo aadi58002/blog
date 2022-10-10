@@ -2,9 +2,20 @@
 import glob
 import os
 import time
+from typing_extensions import Never
+
+def DataModifieFloat(file):
+    return os.path.getmtime(file)
 
 def DateModified(file):
-    return time.strftime("%Y-%m-%d", time.strptime(time.ctime(os.path.getmtime(file))))
+    return time.strftime("%Y-%m-%d", time.strptime(time.ctime(DataModifieFloat(file))))
+
+def SortFilesBasedOnUpdateStatus(files):
+    list = []
+    for file in files:
+        list.append(file)
+    list.sort(reverse=True,key=DataModifieFloat)
+    return list
 
 def localFileParsing(file):
     count = 0
@@ -19,23 +30,25 @@ def localFileParsing(file):
 
 def parsingUniqTags(TagString,UniqTags):
     for tag in TagString.split(','):
-        tag = tag.strip()
-        UniqTags.add(tag[1:-1])
+        tag = tag.replace("'","").replace("[","").replace("]","").strip()
+        UniqTags.add(tag)
 
 def parsingFrontMatter(frontmatter,UniqTags):
     item = ""
     if frontmatter != None:
         for data in frontmatter:
-            data_collection = data.split(":")
-            data_title = data_collection[0].strip()
-            data_value = data_collection[1].strip()
-            if data_title.lower() == 'title':
-                item = item + "        text: '" + data_value + "',\n"
-            elif data_title.lower() == 'description':
-                item = item + "        description: '" + data_value + "',\n"
-            elif data_title.lower() == 'tags':
-                parsingUniqTags(data_value,UniqTags)
-                item = item + "        tags: [" + data_value + "],\n"
+            if data != "":
+                data_collection = data.split(":")
+                data_title = data_collection[0].strip()
+                data_value = data_collection[1].strip()
+                if data_title.lower() == 'title':
+                    item = item + "        text: '" + data_value + "',\n"
+                elif data_title.lower() == 'description':
+                    item = item + "        description: '" + data_value + "',\n"
+                elif data_title.lower() == 'tags':
+                    parsingUniqTags(data_value,UniqTags)
+                    sorted(UniqTags)
+                    item = item + "        tags: " + data_value + ",\n"
     return item
 
 def writingtsBlockToFile(file,UniqTags,listItems):
@@ -61,10 +74,13 @@ dirname = os.path.dirname(__file__)
 BlogDir = os.path.join(dirname, 'content/blogs/')
 blogFiles = glob.glob(BlogDir + "*.md")
 blogFiles = filter(lambda x: x.endswith("index.md") != True,blogFiles)
+
+SortFiles = SortFilesBasedOnUpdateStatus(blogFiles)
+
 listItems = []
 UniqTags = set()
 
-for file in blogFiles:
+for file in SortFiles:
     item = "      {\n        links: '/blogs/" + file.split("/")[-1].split(".")[0] + "',\n"
     frontmatter = localFileParsing(open(file, "r"))
     item = item + parsingFrontMatter(frontmatter,UniqTags)
