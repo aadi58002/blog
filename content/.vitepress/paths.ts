@@ -4,8 +4,8 @@ export function sidebarGuideLinux() {
       text: 'Linux',
       collapsible: true,
       items: [
-        { text: 'Installation', link: '/Linux-Blog/guide/Linux/Installation' },
-        { text: 'Terminal', link: '/Linux-Blog/guide/Linux/Terminal' },
+        { text: 'Installation', link: '/guide/Linux/Installation' },
+        { text: 'Terminal', link: '/guide/Linux/Terminal' },
       ]
     }
   ]
@@ -16,10 +16,10 @@ export function sidebarGuideEmacs() {
       text: 'Emacs',
       collapsible: true,
       items: [
-        { text: 'Introduction Emacs', link: '/Linux-Blog/guide/Emacs/Introduction' },
-        { text: 'Installation Doom', link: '/Linux-Blog/guide/Emacs/Installation' },
-        { text: 'Getting Started', link: '/Linux-Blog/guide/Emacs/GettingStarted' },
-        { text: 'Resources', link: '/Linux-Blog/guide/Emacs/Resources' },
+        { text: 'Introduction Emacs', link: '/guide/Emacs/Introduction' },
+        { text: 'Installation Doom', link: '/guide/Emacs/Installation' },
+        { text: 'Getting Started', link: '/guide/Emacs/GettingStarted' },
+        { text: 'Resources', link: '/guide/Emacs/Resources' },
       ]
     }
   ]
@@ -31,7 +31,7 @@ export function sidebarGuideWebdev() {
       text: 'Web Dev',
       collapsible: true,
       items: [
-        { text: 'Vue', link: '/Linux-Blog/guide/Web-dev/Vue' },
+        { text: 'Vue', link: '/guide/Web-dev/Vue' },
       ]
     }
   ]
@@ -42,7 +42,7 @@ export function sidebarGuideProglang() {
       text: 'Prog Lang',
       collapsible: true,
       items: [
-        { text: 'Rust', link: '/Linux-Blog/guide/Prog-lang/Rust' },
+        { text: 'Rust', link: '/guide/Prog-lang/Rust' },
       ]
     }
   ]
@@ -53,10 +53,10 @@ export function sidebarGuide() {
     {
       text: 'Guide Topics',
       items: [
-        { text: 'Linux', link: '/Linux-Blog/guide/Linux/' },
-        { text: 'Emacs', link: '/Linux-Blog/guide/Emacs/' },
-        { text: 'Web Dev', link: '/Linux-Blog/guide/Web-dev/' },
-        { text: 'Prog Lang', link: '/Linux-Blog/guide/Prog-lang/' },
+        { text: 'Linux', link: '/guide/Linux/' },
+        { text: 'Emacs', link: '/guide/Emacs/' },
+        { text: 'Web Dev', link: '/guide/Web-dev/' },
+        { text: 'Prog Lang', link: '/guide/Prog-lang/' },
       ]
     }
   ]

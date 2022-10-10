@@ -15,13 +15,14 @@ if(props.color == "blue"){
 } else if (props.color == "yellow"){
      boxColor="warning"
 }
+const base = "/Linux-Blog"
 </script>
 
 <template>
     <div :class="boxColor + ' custom-block homeListBlock'">
         <img :src="image" alt="unable to load image" :style="'width: ' + imageWidth"/>
         <div v-for="link in list.items">
-            <a :href="link.link">{{ link.text }}</a>
+            <a :href="base.concat(link.link)">{{ link.text }}</a>
         </div>
     </div>
 </template>
