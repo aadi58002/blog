@@ -4,7 +4,7 @@ title: Getting Started with Doom Emacs
 
 # {{ $frontmatter.title }}
 ::: warning
-All the Blogs after Getting started assume that you are using the default config provided by this blog. -> <a href="/config.zip" download>here</a>
+All the Blogs after Getting started assume that you are using the default config provided by this blog. -> <a href="/Linux-Blog/config.zip" download>here</a>
 :::
 
 ## How to start Emacs
