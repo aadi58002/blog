@@ -10,15 +10,15 @@
   "license": "CC-BY-4.0",
   "private": false,
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.13",
-    "vue": "^3.2.39"
+    "vitepress": "1.0.0-alpha.33",
+    "vue": "^3.2.45"
   },
   "scripts": {
     "dev": "vitepress dev content --port 8000",
-    "build": "vitepress build content --port 8000",
+    "build": "vitepress build content",
     "serve": "vitepress serve content --port 8000",
     "content:dev": "vitepress dev content --port 8000",
-    "content:build": "vitepress build content --port 8000",
+    "content:build": "vitepress build content",
     "content:serve": "vitepress serve content --port 8000"
   }
 }
