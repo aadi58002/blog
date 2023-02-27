@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as n}from"./app.18657d6b.js";const m=JSON.parse('{"title":"Keybinding","description":"","frontmatter":{"title":"Keybinding"},"headers":[],"relativePath":"guide/Emacs/Keybinding.md","lastUpdated":1666466550000}'),a={name:"guide/Emacs/Keybinding.md"};function i(s,d,r,c,o,p){return t(),n("div")}const g=e(a,[["render",i]]);export{m as __pageData,g as default};
