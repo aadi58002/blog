@@ -8,7 +8,7 @@ title: Installtion of Doom emacs
   ``` sh
   sudo apt update && sudo apt install emacs fd-find ripgrep
   ```
-- Pacman / Endevour / Manjaro
+- Arch / Endevour / Manjaro
   ``` sh
   sudo pacman -Sy emacs-nativecomp ripgrep fd
   ```

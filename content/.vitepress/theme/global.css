@@ -34,12 +34,13 @@
 .VPHome {flex-grow: 1; padding: 0px !important;}
 
 :root {
+    --vp-c-bg-mute: var(--vp-button-alt-bg);
     --vp-c-green: #6897ff;
     --vp-c-green-light: #76acff;
     --vp-c-green-lighter: #a0beff;
     --vp-c-green-dark: #005be3;
     --vp-c-green-darker: #0045ac;
-    --vp-c-green-dimm-1: rgba(39, 112, 222, 0.5);
+    --vp-c-green-dimm-1: rgba(39, 112, 222, 0.05);
     --vp-c-green-dimm-2: rgba(39, 112, 222, 0.25);
-    --vp-c-green-dimm-3: rgba(39, 112, 222, 0.05);
+    --vp-c-green-dimm-3: rgba(39, 112, 222, 0.5);
 }

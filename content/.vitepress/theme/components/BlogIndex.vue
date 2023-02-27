@@ -48,11 +48,14 @@ function SearchTermAdd(tag){
 }
 
 .searchTermBar{
-   background-color: var(--vp-c-bg-mute);
+   background-color: var(--vp-button-alt-bg);
    display: flex;
+   align-items: center;
+   vertical-align: middle;
    flex-wrap: wrap;
    border-radius: 5px;
-   min-height: 30px;
+   padding: 5px;
+   height: 60px;
 }
 
 .SearchTitle{
@@ -61,7 +64,8 @@ function SearchTermAdd(tag){
 
 .Searchtag{
     margin: 5px;
-    padding: 0px 5px;
+    padding: 1px 5px;
+    font-weight: 400;
     background-color: var(--vp-c-brand);
     border-radius: 5px;
 }

@@ -1,3 +1,5 @@
 ---
 title: Keybinding
 ---
+
+# {{ $frontmatter.title }}

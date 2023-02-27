@@ -40,9 +40,9 @@ It is because out the box emacs is very unusable.
 ## Solution to Emacs problem
 - [Doom Emacs](https://github.com/doomemacs/doomemacs) is a have good defaults configuration framework for emacs.  
   It also gives you the most powerful interface with emacs while it does not gets in the way when you try to customize it.
+> Personal Opinion -> Best point for begineers to start with emacs.
 - [Spacemacs](https://www.spacemacs.org/) is a do it all solution . It has everything and it does everything.  
-> Personal Opinion -> It does too much and is too slow for me
-
+> Personal Opinion -> It does too much and is too slow for me.
 
 ::: danger Emacs is not VSCode
 No matter how much you try things will break sometimes and the community support for things like code autocompletions it might need some tinking for some languages <br/>( like vue )  

@@ -12,7 +12,6 @@ const config: UserConfig = {
   appearance: true,
   ignoreDeadLinks: true,
   markdown: {
-    theme: 'material-palenight',
     lineNumbers: true,
   },
   themeConfig: {
