@@ -10,8 +10,8 @@
   "license": "CC-BY-4.0",
   "private": false,
   "devDependencies": {
-    "vitepress": "1.0.0-alpha.47",
-    "vue": "^3.2.47"
+    "vitepress": "1.0.0-beta.1",
+    "vue": "^3.3.4"
   },
   "scripts": {
     "dev": "vitepress dev content --port 8000",

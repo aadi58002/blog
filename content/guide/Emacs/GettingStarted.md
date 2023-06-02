@@ -17,7 +17,7 @@ You will need to call `emacsclient -c -a '' & disown` which will create a graphi
 
 ::: tip
 You can copy the command alias which i use to start or restart emacs use [here](./Installation#personal-way)  
-Then you can start emacs with `ess && emacsclient -c -a ''`
+Then you can start emacs with `ess && e`
 :::
 
 ## Keybinding Convention
@@ -32,10 +32,12 @@ The keys which are seperated by a space you can press them one by one you `don't
 
 ## Evil ( Or vim for emacs )
 Doom emacs by default uses Vim keybinding.  
-To learn about vim just just press `M-x` and then type evil-tutor-start and then press enter.  
-It should open a guide like below
-![Evil Tutor](GettingStarted/evil-tutor.png)
-
-I Would recommend that you complete this until chapter 4 (including chapter 4).  
+To learn about vim.
+paste this in your `~/.doom.d/package.el` and paste this line at the end of it.
+`(use-package evil-tutor)`
+After that close emacs and if you have the server running kill it.
+With the `ke` command or htop.
+Then after restarting emacs you should press `M-x` and then type `evil-tutor-start` command.  
+  * [ ] I Would recommend that you complete this until chapter 4 (including chapter 4).  
 That would cover 70% of what you will do in terms of text editing in emacs.  
 

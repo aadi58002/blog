@@ -30,7 +30,7 @@ Emacs looks for `~/.emacs.d` folder which contains the file to configure it. It 
 .el is the file extension of elisp files the language of emacs
 :::
 ## Doom emacs
-Doom emacs takes over the `~/.emacs.d` and it is recommened to not change files inside `~/.doom.d` instead a `~/.emacs.d` directory is used to configure the doom emacs framework.
+Doom emacs takes over the `~/.emacs.d` and it is recommened to not change files inside `~/.emacs.d` instead a `~/.doom.d` directory is used to configure the doom emacs framework.
 ## Installation
 This is the offical way of install doom emacs.
 :::warning
@@ -58,10 +58,6 @@ After pasting the above in your `~/.bashrc` or `~/.zshrc` or `~/.config/fish/con
 doomclone && doom install
 ```
 > Answer yes to all questions ( it is mostly to install required fonts for doom emacs )
-## Personal Recommended Config
-Download Recommended Doom Config -> <a href="/Linux-Blog/config.zip" download>here</a>
-> The above are good default for doom emacs which are in `my opinion` better to start with.
-
 ::: warning
 If you already have a `~/.doom.d` either rename to something else or remove the directory
 :::
