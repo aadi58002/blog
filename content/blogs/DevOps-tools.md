@@ -1,6 +1,7 @@
 ---
 title: Dev Ops Tools
 description: A list of dev ops tools and what they and what are there advantages or disadvantages
+production: false
 tags: ['docker','podman','devops','kubernetes']
 ---
 
@@ -11,7 +12,7 @@ tags: ['docker','podman','devops','kubernetes']
 [Minikube getting started](https://minikube.sigs.k8s.io/docs/start/)
 #### Advantages
 1. Simple to use.
-2. Provides a graphical eb client to control it.
+2. Provides a graphical web client to control it.
 3. Has a lot of tutorials
 4. Offical recommendation to run local kubernetes cluster
 #### Disadvantages

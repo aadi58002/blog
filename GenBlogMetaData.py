@@ -2,19 +2,20 @@
 import glob
 import os
 import time
+from typing import Union
 from typing_extensions import Never
 
-def DataModifieFloat(file):
+def dataModifieFloat(file):
     return os.path.getmtime(file)
 
-def DateModified(file):
-    return time.strftime("%Y-%m-%d", time.strptime(time.ctime(DataModifieFloat(file))))
+def dateModified(file):
+    return time.strftime("%Y-%m-%d", time.strptime(time.ctime(dataModifieFloat(file))))
 
-def SortFilesBasedOnUpdateStatus(files):
+def sortFilesBasedOnUpdateStatus(files):
     list = []
     for file in files:
         list.append(file)
-    list.sort(reverse=True,key=DataModifieFloat)
+    list.sort(reverse=True,key=dataModifieFloat)
     return list
 
 def localFileParsing(file):
@@ -28,13 +29,15 @@ def localFileParsing(file):
         if count == 2 :
             return frontmatter
 
-def parsingUniqTags(TagString,UniqTags):
+def parsingFileTags(TagString,UniqTags):
     for tag in TagString.split(','):
         tag = tag.replace("'","").replace("[","").replace("]","").strip()
         UniqTags.add(tag)
 
 def parsingFrontMatter(frontmatter,UniqTags):
     item = ""
+    production = False
+    file_tags = set()
     if frontmatter != None:
         for data in frontmatter:
             if data != "":
@@ -45,11 +48,18 @@ def parsingFrontMatter(frontmatter,UniqTags):
                     item = item + "        text: '" + data_value + "',\n"
                 elif data_title.lower() == 'description':
                     item = item + "        description: '" + data_value + "',\n"
+                elif data_title.lower() == 'production':
+                    if data_value.lower() == 'true':
+                        production = True
                 elif data_title.lower() == 'tags':
-                    parsingUniqTags(data_value,UniqTags)
-                    sorted(UniqTags)
+                    parsingFileTags(data_value,file_tags)
+                    sorted(file_tags)
                     item = item + "        tags: " + data_value + ",\n"
-    return item
+    if production:
+        for ele in file_tags:
+            UniqTags.add(ele)
+
+    return (production,item)
 
 def writingtsBlockToFile(file,UniqTags,listItems):
     with open(file,"r") as f:
@@ -58,7 +68,7 @@ def writingtsBlockToFile(file,UniqTags,listItems):
         endString = '// Python Script Adjustment Block End'
         f = test.index(startString) + len(startString)
         l = test.index(endString)
-        test_final = test[:f+1] + "    Uniqtags: ["
+        test_final = test[:f+1] + "    Uniqtags: [ "
         for tag in UniqTags:
             test_final = test_final + "'" + tag + "',"
         test_final = test_final[:-1] + "],\n" + "    items: [\n"
@@ -75,7 +85,7 @@ BlogDir = os.path.join(dirname, 'content/blogs/')
 blogFiles = glob.glob(BlogDir + "*.md")
 blogFiles = filter(lambda x: x.endswith("index.md") != True,blogFiles)
 
-SortFiles = SortFilesBasedOnUpdateStatus(blogFiles)
+SortFiles = sortFilesBasedOnUpdateStatus(blogFiles)
 
 listItems = []
 UniqTags = set()
@@ -83,9 +93,11 @@ UniqTags = set()
 for file in SortFiles:
     item = "      {\n        link: '/blogs/" + file.split("/")[-1].split(".")[0] + "',\n"
     frontmatter = localFileParsing(open(file, "r"))
-    item = item + parsingFrontMatter(frontmatter,UniqTags)
-    blogFileModified = DateModified(file)
-    item = item + "        lastUpdated: '" + blogFileModified + "'\n      }"
-    listItems.append(item)
+    (production,front_matter_value) = parsingFrontMatter(frontmatter,UniqTags)
+    if production:
+        item = item + front_matter_value
+        blogFileModified = dateModified(file)
+        item = item + "        lastUpdated: '" + blogFileModified + "'\n      }"
+        listItems.append(item)
 
 writingtsBlockToFile(dirname + "/content/.vitepress/blogs.ts",UniqTags,listItems)

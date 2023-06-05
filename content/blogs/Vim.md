@@ -1,6 +1,7 @@
 ---
 title: Vim Tricks
 description: A set of vim command which can be useful but are not commonly found
+production: true
 tags: ['Text Editor', 'Vim']
 ---
 

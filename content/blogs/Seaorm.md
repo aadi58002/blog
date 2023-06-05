@@ -1,6 +1,7 @@
 ---
 title: Seaorm
 description: This blog will describe the process of me learning about Seaorm
+production: false
 tags: ['podman','database','postgres','rust','seaorm']
 ---
 
