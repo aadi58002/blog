@@ -5,7 +5,7 @@ const props = defineProps<{
 </script>
 
 <template>
-    <a :href="data.links">
+    <a :href="data.link">
         <div class="custom-block tip blogEntry">
             <div class="title">{{data.text}}</div>
             <div class="tagList">

@@ -13,6 +13,13 @@ There are many ways to get familiar with vim
 
 ## Case Changes in vim
 ```sh
+ visual Mode:
+ u    : Change the selected area to lower case
+ 
+ U    : Change the selected area to upper case
+ 
+ normal Mode:
+
  ~    : Changes the case of current character
 
  guu  : Change current line from upper to lower.

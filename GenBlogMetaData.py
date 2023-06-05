@@ -81,7 +81,7 @@ listItems = []
 UniqTags = set()
 
 for file in SortFiles:
-    item = "      {\n        links: '/Linux-Blog/blogs/" + file.split("/")[-1].split(".")[0] + "',\n"
+    item = "      {\n        links: '/blogs/" + file.split("/")[-1].split(".")[0] + "',\n"
     frontmatter = localFileParsing(open(file, "r"))
     item = item + parsingFrontMatter(frontmatter,UniqTags)
     blogFileModified = DateModified(file)
