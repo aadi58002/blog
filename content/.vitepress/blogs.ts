@@ -3,7 +3,7 @@ export default () => {
     text: 'Blogs',
     collapsible: true,
 // Python Script Adjustment Block Start
-    Uniqtags: [ 'Vim','Text Editor'],
+    Uniqtags: [ 'Text Editor','Vim'],
     items: [
       {
         link: '/blogs/Vim',

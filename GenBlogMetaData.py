@@ -55,11 +55,17 @@ def parsingFrontMatter(frontmatter,UniqTags):
                     parsingFileTags(data_value,file_tags)
                     sorted(file_tags)
                     item = item + "        tags: " + data_value + ",\n"
-    if production:
+    development = False
+    try:
+        if os.environ['BLOG_DEVELOPMENT'].lower() == 'true':
+            development = True
+    except:
+        pass
+    if production or development:
         for ele in file_tags:
             UniqTags.add(ele)
 
-    return (production,item)
+    return (production or development,item)
 
 def writingtsBlockToFile(file,UniqTags,listItems):
     with open(file,"r") as f:
