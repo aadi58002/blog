@@ -3,24 +3,24 @@ export default () => {
     text: 'Blogs',
     collapsible: true,
 // Python Script Adjustment Block Start
-    Uniqtags: ['seaorm','Vim','devops','podman','docker','postgres','database','Text Editor','rust','kubernetes'],
+    Uniqtags: ['kubernetes','postgres','Text Editor','database','podman','docker','devops','seaorm','Vim','rust'],
     items: [
       {
-        links: '/blogs/Vim',
+        link: '/blogs/Vim',
         text: 'Vim Tricks',
         description: 'A set of vim command which can be useful but are not commonly found',
         tags: ['Text Editor', 'Vim'],
         lastUpdated: '2023-06-05'
       },
       {
-        links: '/blogs/DevOps-tools',
+        link: '/blogs/DevOps-tools',
         text: 'Dev Ops Tools',
         description: 'A list of dev ops tools and what they and what are there advantages or disadvantages',
         tags: ['docker','podman','devops','kubernetes'],
         lastUpdated: '2023-06-02'
       },
       {
-        links: '/blogs/Seaorm',
+        link: '/blogs/Seaorm',
         text: 'Seaorm',
         description: 'This blog will describe the process of me learning about Seaorm',
         tags: ['podman','database','postgres','rust','seaorm'],
