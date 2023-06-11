@@ -8,7 +8,7 @@ const config: UserConfig = {
   title: 'Aditya Yadav',
   description: 'Interting topics as well a place to get good links to resources for topics of my interest',
   lastUpdated: true,
-  outDir: '../dist/',
+  outDir: '../public/',
   appearance: true,
   ignoreDeadLinks: true,
   markdown: {
