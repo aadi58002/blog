@@ -2,8 +2,6 @@
 import glob
 import os
 import time
-from typing import Union
-from typing_extensions import Never
 
 def dataModifieFloat(file):
     return os.path.getmtime(file)
