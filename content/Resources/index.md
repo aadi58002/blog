@@ -9,3 +9,7 @@ title: Index for Good resources
 
 # Blog
 [https://fasterthanli.me/](Fasterthanlime) - Great blogs about very intersting concept which are very thoughfully explained
+
+# Good online apps
+[https://excalidraw.com/](Excalidraw)      - A convinient online draw tool with good and stable ui
+[https://regex101.com/](Regex 101)         - A irreplaceable tool when writing regex
