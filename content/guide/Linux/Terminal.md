@@ -1,11 +1,11 @@
 ---
-title: "Terminal for Children"
+title: "Terminal Parts"
 ---
 
 <h1>{{ $frontmatter.title }}</h1>
 
 ::: info <p style="text-align: center">Terminal is your friend to getting faster</p>
-<span style="color: var(--vp-c-brand)">*Terminal is a different way to do stuff on your computer.*</span>
+<p style="text-align: center">Terminal is a different way to do stuff on your computer.</p>
 :::
 
 # Terminal and it parts
