@@ -23,6 +23,7 @@ jobs:
       with:
         version: 6.0.2
     - run: pnpm install
+    - run: python GenBlogMetaData.py
     - run: pnpm build
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3

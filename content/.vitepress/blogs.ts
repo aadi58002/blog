@@ -3,7 +3,7 @@ export default () => {
     text: 'Blogs',
     collapsible: true,
 // Python Script Adjustment Block Start
-    Uniqtags: [ 'programming','nom','Vim','rust','Text Editor'],
+    Uniqtags: [ 'programming','nom','Text Editor','rust','Vim'],
     items: [
       {
         link: '/blogs/Advent-of-code-2022',
@@ -17,7 +17,7 @@ export default () => {
         text: 'Vim Tricks',
         description: 'A set of vim command which can be useful but are not commonly found',
         tags: ['Text Editor', 'Vim'],
-        lastUpdated: '2023-06-28'
+        lastUpdated: '2023-07-20'
       },
     ]
 // Python Script Adjustment Block End
