@@ -3,5 +3,5 @@
 *cache*
 
 dist
-public
+/public
 .log

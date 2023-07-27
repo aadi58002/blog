@@ -6,7 +6,7 @@ tags: ['Github', 'Automation', 'Build systems']
 ---
 
 # {{ $frontmatter.title }}
-![Banner Image](/Linux-Blog/github-actions-void.png)
+![Banner Image](/blogs/github-actions-void.png)
 ## Goal
 I wanted to automate the building of package build with `xbps-src` to a remote automated job and then make it into a [repository](https://docs.voidlinux.org/xbps/repositories/custom.html) and host it (for free).
   
