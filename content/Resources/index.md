@@ -13,3 +13,7 @@ title: Index for Good resources
 # Good online apps
 [https://excalidraw.com/](Excalidraw)      - A convinient online draw tool with good and stable ui
 [https://regex101.com/](Regex 101)         - A irreplaceable tool when writing regex
+
+# Project ideas/Guides
+[https://github.com/codecrafters-io/build-your-own-x](Creating tools from scratch)     - A collection of great projects and resources to make them in common programming langs.
+
