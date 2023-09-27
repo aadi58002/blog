@@ -1,9 +1,15 @@
 import type { UserConfig } from 'vitepress'
-import { mcol, merge,sidebarGuide,sidebarGuideEmacs,sidebarGuideLinux,sidebarGuideProglang,sidebarGuideWebdev } from './paths'
 import sidebarBlog from './blogs'
 
+function mcol(target: any) {
+  if (target.length > 1) {
+    target.forEach(v => v.collapsible = true);
+  }
+  return target;
+}
+
 const config: UserConfig = {
-  base: '/Linux-Blog',
+  base: '/blog',
   lang: 'en-US',
   title: 'Aditya Yadav',
   description: 'Interting topics as well a place to get good links to resources for topics of my interest',
@@ -27,14 +33,9 @@ const config: UserConfig = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Blogs', link: '/blogs/' },
-      { text: 'Guide', link: '/guide/' },
       { text: 'Contact', link: '/contact/' }
     ],
     sidebar: {
-      '/guide/Linux/': mcol(merge(sidebarGuideLinux(),sidebarGuide())),
-      '/guide/Prog-lang/': mcol(merge(sidebarGuideProglang(),sidebarGuide())),
-      '/guide/Emacs/': mcol(merge(sidebarGuideEmacs(),sidebarGuide())),
-      '/guide/Web-dev/': mcol(merge(sidebarGuideWebdev(),sidebarGuide())),
       '/blogs/': mcol(sidebarBlog()),
 
       // Must be at bottom, so other branches are not matched

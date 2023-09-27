@@ -1,5 +1,5 @@
 ---
-title: Github Actions
+title: Github Actions For void linux
 description: Explaining how i understand github actions
 production: true
 tags: ['Github', 'Automation', 'Build systems']
@@ -109,13 +109,37 @@ So just a little change of name and it is done.
 ### Step 2
 This part was the part which i though would be the hardest but looking in the folder for workflow in the [main repo](https://github.com/void-linux/void-packages).  
 I found the a build workflow for the package and there environment setup -> [build.yaml](https://github.com/void-linux/void-packages/blob/master/.github/workflows/build.yaml)
-So we copy paste the part we want a understand whats going on.
+So we copy paste the part we want and try to understand whats going on.
+
+#### Name
+It is basically the name of the Action which is shown under the [Github Actions page](https://github.com/aadi58002/void-packages/actions).
 ```yaml
 name: Build Custom package
+```
 
+#### Trigger
+Triggers are conditionals which tells github when to run a job.  
+[All github actions triggers](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows)  
+You can see two triggers here.
+- workflow_dispatch -> It gives you `run workflow` button you see below to manually trigger the action.
+![Banner Image](/blogs/github-workflow-dispatch.png)
+- push.paths -> Trigger the actions whenever a commit is pushed which changed the file under `srcpkgs` path.
+::: details
+`srcpkgs/**` - The `**` here are called glob in bash. You can read more about it here [Bash Globbing Tutorial](https://linuxhint.com/bash_globbing_tutorial/)
+:::
+```yaml
 on:
   workflow_dispatch:
   push:
     paths:
       - 'srcpkgs/**'
 ```
+#### Creating a Job
+Here is the thing you all been waiting for this is where we write the steps to do thing we want to do like build packages.
+You can read the below like. Run the build job ( name of the job ) in the ubuntu-latest Virtual machine.
+```yaml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+```
+#### Attach a Container with void tools
