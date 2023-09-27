@@ -32,7 +32,7 @@ function SearchTermAdd(tag){
                 <p class="Searchtag">{{ tag }}</p>
             </span>
         </div>
-        <div class="tagListBar">
+        <div class="tagListBar button">
             <button :class="{'tagButton ': true,'selected': SearchTerms.searchTags.indexOf(tag) >= 0}" v-for="tag in tagList" @click="SearchTermAdd(tag)">{{ tag }}</button>
         </div>
         <div v-for="item in displayList">
@@ -48,7 +48,7 @@ function SearchTermAdd(tag){
 }
 
 .searchTermBar{
-   background-color: var(--vp-button-alt-bg);
+   background-color: var(--vp-c-default-soft);
    display: flex;
    align-items: center;
    vertical-align: middle;
@@ -63,10 +63,10 @@ function SearchTermAdd(tag){
 }
 
 .Searchtag{
+    background-color: var(--vp-custom-block-tip-bg);
     margin: 5px;
     padding: 1px 5px;
     font-weight: 400;
-    background-color: var(--vp-c-brand);
     border-radius: 5px;
 }
 
@@ -77,18 +77,14 @@ function SearchTermAdd(tag){
 }
 
 .tagButton {
-    border-color: var(--vp-button-alt-border);
-    color: var(--vp-button-alt-text) !important;
-    background-color: var(--vp-button-alt-bg);
+    border: 2px solid var(--vp-custom-block-tip-bg);
     margin: 0px 5px;
     border-radius: 20px;
     padding: 0 12px;
     line-height: 30px;
     font-size: 14px;
 }
-
 .selected {
-   background-color: var(--vp-c-brand);
-   color: var(--vp-code-block-bg);
+    background-color: var(--vp-custom-block-tip-bg);
 }
 </style>
