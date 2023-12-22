@@ -1,5 +1,6 @@
 import type { UserConfig } from 'vitepress'
 import sidebarBlog from './blogs'
+import markdown_it_task_lists from 'markdown-it-task-lists'
 
 function mcol(target: any) {
   if (target.length > 1) {
@@ -19,6 +20,9 @@ const config: UserConfig = {
   ignoreDeadLinks: true,
   markdown: {
     lineNumbers: true,
+    config: (md) => {
+        md.use(markdown_it_task_lists)
+    },
   },
   sitemap: {
     hostname: 'https://aadi58002.github.io/blog'

@@ -8,9 +8,10 @@ tags: ['Text Editor', 'Vim']
 # {{ $frontmatter.title }}
 ## Learning vim
 There are many ways to get familiar with vim
-1. If you have vim installed (not neovim) then there is a command called `vimtutor` which you can use to learn vim.
+1. If you have vim installed then there is a cli command called `vimtutor` which you can use to learn vim.
    For begineers i would recommend that you complete it till 2nd chapter.
-2. [Evil Tutor](/guide/Emacs/GettingStarted.md) ( Vim tutor for emacs users )
+2. Similarly foe neovim you can use the command from inside neovim with entering command mode with `:` and then `tutor`.
+3. [Evil Tutor](/guide/Emacs/GettingStarted.md) ( Vim tutor for emacs users )
 
 ## Move by word
 Word is anything seperated by punctuation or space.

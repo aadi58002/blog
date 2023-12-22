@@ -3,28 +3,35 @@ export default () => {
     text: 'Blogs',
     collapsible: true,
 // Python Script Adjustment Block Start
-    Uniqtags: [ 'Build systems','Vim','Automation','wayland','Text Editor','Rust','Github'],
+    Uniqtags: [ 'Fun','Build systems','Projects','Text Editor','Github','Automation','Vim','Rust'],
     items: [
       {
-        link: '/blogs/rustwaywm',
-        text: 'Writing a wayland compositor',
-        description: 'Understanding how linux, rendering and wayland works with writing a wayland compositor in rust',
-        tags: ['wayland', 'Rust'],
-        lastUpdated: '2023-09-27'
+        link: '/blogs/Rust-Fun-Part-1',
+        text: 'Rust Fun (Part 1)(Macros)',
+        description: 'The first part of fun tasks planned for the Rust fun series',
+        tags: ['Rust', 'Projects', 'Fun'],
+        lastUpdated: '2023-12-17'
       },
       {
-        link: '/blogs/Github-Actions',
-        text: 'Github Actions For void linux',
-        description: 'Explaining how i understand github actions',
-        tags: ['Github', 'Automation', 'Build systems'],
-        lastUpdated: '2023-08-20'
+        link: '/blogs/Rust-Fun-Part-0',
+        text: 'Rust Fun (Part 0)',
+        description: 'Some fun activities to try out with rust',
+        tags: ['Rust', 'Projects', 'Fun'],
+        lastUpdated: '2023-12-17'
       },
       {
         link: '/blogs/Vim',
         text: 'Vim Tricks',
         description: 'A set of vim command which can be useful but are not commonly found',
         tags: ['Text Editor', 'Vim'],
-        lastUpdated: '2023-08-05'
+        lastUpdated: '2023-12-17'
+      },
+      {
+        link: '/blogs/Github-Actions',
+        text: 'Github Actions For void linux',
+        description: 'Explaining how i understand github actions',
+        tags: ['Github', 'Automation', 'Build systems'],
+        lastUpdated: '2023-10-12'
       },
     ]
 // Python Script Adjustment Block End

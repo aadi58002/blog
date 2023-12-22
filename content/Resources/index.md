@@ -23,3 +23,4 @@ title: Index for Good resources
 [https://darkcoding.net/](darkcoding.net)
 [https://darkcoding.net/software/a-very-small-rust-binary-indeed/](A very small Rust binary indeed · Graham King)
 [https://users.rust-lang.org/t/i-cant-find-glutin-tutorials/93482/2](A forum answer which explains how rendering and displaying windows work)
+[https://blessed.rs/crates](Blessed Rs a curated list of trusted crates for rust for any given task)

@@ -10,8 +10,8 @@
   "license": "CC-BY-4.0",
   "private": false,
   "devDependencies": {
-    "vitepress": "1.0.0-rc.20",
-    "vue": "^3.3.4"
+    "vitepress": "1.0.0-rc.32",
+    "vue": "^3.3.12"
   },
   "scripts": {
     "dev": "vitepress dev content --port 8000",
@@ -20,5 +20,8 @@
     "content:dev": "vitepress dev content --port 8000",
     "content:build": "vitepress build content",
     "content:serve": "vitepress serve content --port 8000"
+  },
+  "dependencies": {
+    "markdown-it-task-lists": "^2.1.1"
   }
 }
