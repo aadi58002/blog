@@ -40,6 +40,7 @@ const config: UserConfig = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Blogs', link: '/blogs/' },
+      { text: 'Resources', link: '/resources/' },
       { text: 'Contact', link: '/contact/' }
     ],
     sidebar: {
