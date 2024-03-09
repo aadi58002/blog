@@ -45,12 +45,33 @@ T     : Goto just after the char ( Backward )
 
 ## Case Changes in vim
 ```sh
- visual Mode:
- u    : Change the selected area to lower case
- 
- U    : Change the selected area to upper case
- 
- normal Mode:
+visual Mode:
+u    : Change the selected area to lower case
 
- ~    : Changes the case of current character
+U    : Change the selected area to upper case
+
+normal Mode:
+
+~    : Changes the case of current character
 ```
+
+## Neovim builtin Completions
+You can press the below key combination to get a completion popup.  
+For more info checkout neovim help page on ins-completion. `:h ins-completion`  
+`<C-{key}>` -> Means to hold CTRL and then press {key}
+```sh
+Insert Mode:
+# Really useful and frequently used
+<C-x><C-f> : file names
+
+# Rarely used
+<C-x><C-l> : Whole lines
+<C-x><C-n> : keywords in the current file
+<C-x><C-i> : keywords in the current and included files
+<C-x><C-v> : Vim command-line
+
+# Very good to know and study more about
+<C-x><C-u> : User defined completion
+<C-x><C-o> : omni completion
+```
+

@@ -7,6 +7,9 @@ title: Index for Good resources
 [Faster than lime](https://www.youtube.com/@fasterthanlime) - Deep video about common things which we just take for granted and there deep explaination  
 [TheAltF4Archives](https://www.youtube.com/@TheAltF4Archives/videos) - A curious guy who learned a lot of things very deeply and had good mindset about how to approach coding  
 
+# Online Book
+[Dive Into Systems](https://diveintosystems.org/book/introduction.html) - Great book to getting started with understanding system and programming in general
+
 # Blog
 [Fasterthanlime](https://fasterthanli.me/) - Great blogs about very intersting concept which are very thoughfully explained  
 
