@@ -14,6 +14,9 @@ const props = defineProps({
 </template>
 
 <style scoped>
+a {
+    text-decoration: none !important; 
+}
 .tag{
     color: var(--vp-c-text-2);
     font-size: 1.3rem;

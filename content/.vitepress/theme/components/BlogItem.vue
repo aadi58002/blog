@@ -20,6 +20,9 @@ const props = defineProps<{
 </template>
 
 <style scoped>
+a {
+    text-decoration: none !important; 
+}
 .blogEntry{
     display: grid;
     grid-template-columns: 75% 25%;
@@ -42,7 +45,6 @@ const props = defineProps<{
 .tagList p{
     margin-right: 10px;
     display: inline-block;
-    background-color: ;
 }
 .description{
     padding-top: 5px;
