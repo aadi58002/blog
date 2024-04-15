@@ -1,4 +1,5 @@
-import DefaultTheme from 'vitepress/theme'
+import DefaultTheme from 'vitepress/theme-without-fonts'
+import './global.css'
 
 // Custom Components import start
 import Link from './components/Link.vue'
