@@ -65,7 +65,7 @@ Insert Mode:
 <C-x><C-f> : file names
 
 # Rarely used
-<C-x><C-l> : Whole lines
+<C-x><C-l> : Whole lines (Only works when the cursor is at start of line)
 <C-x><C-n> : keywords in the current file
 <C-x><C-i> : keywords in the current and included files
 <C-x><C-v> : Vim command-line

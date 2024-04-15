@@ -13,4 +13,3 @@ I also like the open source software in general.
 --- 
 
 This blog is my attempt to gather whatever i learn about as well as show what technologies i like to work with.  
-It also showcases the tools i use like [GNU Emacs](https://gitlab.com/aadi58002/emacs) which i love to tinker with.

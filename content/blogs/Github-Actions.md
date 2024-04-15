@@ -16,7 +16,7 @@ Solution which i found -> Github Actions
 
 ## What is Github Actions ?
 Github actions are a service provided by github to do blah blah blah... [Read offical wording here](https://docs.github.com/actions).  
-For our use case it is just a computer ( Virutal machine ) which run commands ( mostly bash ) declared in files under the `.github/workflows` folder.
+For our use case it is just a computer (Virutal machine) which run commands (mostly bash) declared in files under the `.github/workflows` folder.
 
 If you don't want to read the complete thing and just want the source of automated build -> [here](https://github.com/aadi58002/void-packages/blob/master/.github/workflows/custom.yaml) you go.
 
@@ -136,7 +136,7 @@ on:
 ```
 #### Creating a Job
 Here is the thing you all been waiting for this is where we write the steps to do thing we want to do like build packages.
-You can read the below like. Run the build job ( name of the job ) in the ubuntu-latest Virtual machine.
+You can read the below like. Run the job build in the ubuntu-latest Virtual machine.
 ```yaml
 jobs:
   build:
