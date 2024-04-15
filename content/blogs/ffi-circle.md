@@ -19,7 +19,7 @@ Let's spice up the process of calling a function by passing it between different
 ## Code
 I have tried to keep the commit message as descriptive as possible with each containing the problem and the solution. I recommend you go through the repo commit by commit and try to run the code yourself as well.  
 
-Linux has great tools to poke around in a [elfs](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) (Executable and Linkable Format).  
+Linux has great tools to poke around in [ELF Files](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) (Executable and Linkable Format).  
 
 Some common Tools we will be using readelf, nm, ldd, objdump.
 
