@@ -1,7 +1,7 @@
 ---
 title: Foreign Function Interface are hard
 description: A fun learning project to learn about ffi between languages and tooling around them
-production: false
+production: true 
 tags: ['Programming', 'Fun', 'FFI']
 ---
 

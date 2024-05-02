@@ -1,7 +1,7 @@
 ---
 title: Rust Fun (Part 0)
 description: Some fun activities to try out with rust
-production: false 
+production: true
 tags: ['Rust', 'Projects', 'Fun']
 ---
 

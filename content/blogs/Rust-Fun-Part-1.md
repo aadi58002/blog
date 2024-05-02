@@ -1,7 +1,7 @@
 ---
 title: Rust Fun (Part 1)(Macros)
 description: The first part of fun tasks planned for the Rust fun series
-production: false
+production: true 
 tags: ['Rust', 'Projects', 'Fun']
 ---
 
