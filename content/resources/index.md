@@ -14,11 +14,13 @@ title: Index for Good resources
 [Fasterthanlime](https://fasterthanli.me/) - Great blogs about very intersting concept which are very thoughfully explained  
 [Julia Evans](https://jvns.ca/) - Intersting blogs about general programming opinions and fun write ups about git internals and other software workings
 [CSS tricks](https://css-tricks.com) -> Understanding CSS  
+[Niko Matsakis's - smallcultfollowing Blog](https://smallcultfollowing.com/babysteps/) -> Rust Related deep dive blogs
 
 # Good online apps
 [Excalidraw](https://excalidraw.com/)      - A convinient online draw tool with good and stable ui  
 [Regexper](https://regexper.com/)          - Visualize the state machine for regex  
 [Regex 101](https://regex101.com/)         - A irreplaceable tool when writing regex  
+[It tools](https://it-tools.tech/)         - Generally useful tools collection
 
 # Project ideas/Guides
 [Creating tools from scratch](https://github.com/codecrafters-io/build-your-own-x)     - A collection of great projects and resources to make them in common programming langs.  
@@ -28,6 +30,9 @@ title: Index for Good resources
 [A very small Rust binary indeed · Graham King](https://darkcoding.net/software/a-very-small-rust-binary-indeed/)  
 [A forum answer which explains how rendering and displaying windows work](https://users.rust-lang.org/t/i-cant-find-glutin-tutorials/93482/2)  
 [Blessed Rs a curated list of trusted crates for rust for any given task](https://blessed.rs/crates)  
+
+# Rust Fun and intersting Blogs to read
+[Leaving Rust gamedev after 3 years](https://loglog.games/blog/leaving-rust-gamedev/) -> Detailed analysis of choosing rust for the wrong use case
 
 # Interactive sites
 [Float Exposed](https://float.exposed/0x44bf9400) -> Binary representation for number data types
