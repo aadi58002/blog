@@ -39,6 +39,7 @@ title: Index for Good resources
 
 [Niko Matsakis's - smallcultfollowing Blog](https://smallcultfollowing.com/babysteps/) -> Rust Related deep dive blogs
 
+[Void Linux Src tips and tricks](https://xbps-src-tutorials.github.io/tips-and-tricks.html) -> Great blogs about optmizations on void src package building
 
 
 
